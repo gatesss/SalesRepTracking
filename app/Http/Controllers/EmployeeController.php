@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\VisitingPlanCustomer;
+use App\Employee;
 
 
-class VisitingPlanCustomerController extends Controller
+class EmployeeController extends Controller
 {
     
      public function load(Request $req) {
-        $cities = VisitingPlanCustomer::all();
+        $cities = Employee::all();
 //dd($cities);
-        return response()->json(array('datavisitingplancustomer'=>$cities));
+        return response()->json(array('dataemploye'=>$cities));
     }
 
 //     public function crate(Request $req) {
