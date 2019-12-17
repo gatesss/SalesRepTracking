@@ -18,3 +18,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/visitingplancustomer/get', 'VisitingPlanCustomerController@load');
+Route::get('/customer/get', 'CustomerController@load');
+Route::get('/employe/get', 'EmployeeController@load');
+Route::get('/lead/get', 'LeadController@load');
+Route::get('/visitingleadcustomer/get', 'VisitingLeadCustomerController@load');
+Route::get('/visitingplanlead/get', 'VisitingPlanLeadController@load');
+Route::get('/visitingrealisasicustomer/get', 'VisitingRealisasiCustomerController@load');
